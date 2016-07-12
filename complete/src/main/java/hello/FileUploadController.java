@@ -29,7 +29,7 @@ public class FileUploadController {
 
 	private static final Logger log = LoggerFactory.getLogger(FileUploadController.class);
 
-	public static final String ROOT = "E://picture/";
+	public static final String ROOT = "ftp://o9zhcbvih.bkt.clouddn.com/";
 
 	private final ResourceLoader resourceLoader;
 
