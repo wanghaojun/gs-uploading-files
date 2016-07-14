@@ -29,7 +29,7 @@ public class FileUploadController {
 
 	private static final Logger log = LoggerFactory.getLogger(FileUploadController.class);
 
-	public static final String ROOT = "ftp://o9zhcbvih.bkt.clouddn.com/";
+	public static final String ROOT = "/";
 
 	private final ResourceLoader resourceLoader;
 
@@ -50,7 +50,7 @@ public class FileUploadController {
 		return "uploadForm";
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/{filename:.+}")
+	@RequestMapping(method = RequestMethod.GET, value = ROOT + "/{filename:.+}")
 	@ResponseBody
 	public ResponseEntity<?> getFile(@PathVariable String filename) {
 
